@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    #search {
+      display: flex;
+      flex-direction: column;
+      width: 700px;
+      margin: 0 auto;
+      margin-top: 10px;
+    }
+    #logo {
+      height: 110px;
+      width: 300px;
+      margin-left: 29%;
+      margin-bottom: 30px;
+    }
+    #bar {
+      height: 14px;
+      width: 595px;
+      border-radius: 25px;
+      border: 1px solid gray;
+      outline: none;
+      padding: 10px;
+    }
+    #search_results {
+      border-top: none;
+      overflow-x: hidden;
+      border: 1px solid black;
+      width: 614px;
+    }
+  </style>
+  <body>
+    <!-- <h1>Home</h1> -->
+    <div id="search">
+      <img
+        id="logo"
+        src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+        alt=""
+      />
+
+      <input id="bar" type="text" oninput="throttleFunction()" />
+      <div id="search_results"></div>
+    </div>
+  </body>
+</html>
+<script src="home.js"></script>
